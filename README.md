@@ -48,3 +48,7 @@ source .devops/bin/activate
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+
+
+[![Mbapoh](https://circleci.com/gh/Mbaapoh/Operationalize-a-Machine-Learning-Microservice-API.svg?style=svg)](https://app.circleci.com/pipelines/github/Mbaapoh/Operationalize-a-Machine-Learning-Microservice-API/28/workflows/5a34e94c-305b-4cab-9a80-6863122ed7c1/jobs/28)
