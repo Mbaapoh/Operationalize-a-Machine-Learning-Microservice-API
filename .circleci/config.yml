@@ -1,10 +1,10 @@
-# Python CircleCI 2.0 configuration file
-# Check https://circleci.com/docs/2.0/language-python/ for more details
-version: 2.1
+version: 2
 jobs:
   build:
     docker:
-      - image: python:3.7.3-stretch
-        working_directory: ~/repo
+      - image: cimg/node:17.2.0 # the primary container, where your job's commands are run
+        auth:
+          username: mydockerhub-user
+          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
-      - checkout
+      - checkout # check out the code in the project directory
